@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Vahe",
+      "age": "21",
+      "login": "vs",
+      "password": "123",
+      "email": "samsonvahe@gmail.com",
+      "status": "admin",
+      "havedepo": true
+    },
+    {
+      "id": "2",
+      "username": "Armen",
+      "age": "7",
+      "login": "aa",
+      "password": "32",
+      "email": "armen@example.com",
+      "status": "user",
+      "havedepo": true,
+      "avandN6370": {
+        "start_date": "2023-11-29",
+        "finish_date": "2025-09-17",
+        "avandi_gumar": "1000000",
+        "stacvox_gumar": 1200000
+      },
+      "avandN1271": {
+        "start_date": "2025-06-01",
+        "finish_date": "2028-03-01",
+        "avandi_gumar": "1000000",
+        "stacvox_gumar": 1400000
+      },
+      "avandN7010": {
+        "start_date": "2023-11-29",
+        "finish_date": "2028-11-29",
+        "avandi_gumar": "1000000",
+        "stacvox_gumar": 2571264
+      },
+      "avandN4301": {
+        "start_date": "2023-11-29",
+        "finish_date": "2028-11-29",
+        "avandi_gumar": "1000000",
+        "stacvox_gumar": 2653297.705144422
+      },
+      "avandN3576": {
+        "start_date": "2023-12-13",
+        "finish_date": "2025-12-13",
+        "avandi_gumar": "9999",
+        "stacvox_gumar": 13998.599999999999
+      },
+      "avandN5021": {
+        "start_date": "2023-12-15",
+        "finish_date": "2028-12-15",
+        "avandi_gumar": "5000000",
+        "stacvox_gumar": 12856319.999999998
+      }
+    },
+    {
+      "id": "3",
+      "username": "Tigran",
+      "age": "64",
+      "login": "bb",
+      "password": "55",
+      "email": "tigran@example.com",
+      "status": "user",
+      "havedepo": true
+    },
+    {
+      "id": "4",
+      "username": "Lena",
+      "age": "30",
+      "login": "lena123",
+      "password": "abc",
+      "email": "lena@example.com",
+      "status": "user",
+      "havedepo": false
+    },
+    {
+      "id": "5",
+      "username": "John",
+      "age": "45",
+      "login": "john_doe",
+      "password": "qwerty",
+      "email": "john@example.com",
+      "status": "user",
+      "havedepo": true
+    },
+    {
+      "id": "6",
+      "username": "Emma",
+      "age": "28",
+      "login": "emma_22",
+      "password": "xyz",
+      "email": "emma@example.com",
+      "status": "user",
+      "havedepo": false
+    },
+    {
+      "id": "1701191790545",
+      "username": "Hakob Hakobyan",
+      "login": "HakobHakobyan",
+      "password": "hakob1414",
+      "email": "hakob@gmail.com",
+      "avandN7422": {
+        "start_date": "2023-11-29",
+        "finish_date": "2025-11-30",
+        "avandi_gumar": "500000",
+        "stacvox_gumar": 700000
+      },
+      "havedepo": true
+    },
+    {
+      "id": "1701329174411",
+      "username": "Mariam  Grigoryan ",
+      "login": "Mariam Grigoryan ",
+      "password": "4646",
+      "email": "grigoryanmariam725@gmail.com"
+    },
+    {
+      "id": "1701329231212",
+      "username": "Mariam  Grigoryan ",
+      "login": "Mariam Grigoryan ",
+      "password": "555",
+      "email": "grigoryanmariam725@gmail.com"
+    },
+    {
+      "id": "1701329396402",
+      "username": "Mariam Grigoryan",
+      "login": "MariamGrigoryan",
+      "password": "111",
+      "email": "grigoryanmariam725@gmail.com",
+      "avandN8497": {
+        "start_date": "2023-11-30",
+        "finish_date": "2026-11-30",
+        "avandi_gumar": "5000000",
+        "stacvox_gumar": 8639999.999999998
+      },
+      "havedepo": true
+    },
+    {
+      "id": "1701420470467",
+      "username": "Hayk Grigoryan",
+      "login": "HaykGrigoryan",
+      "password": "666",
+      "email": "hayk@mail.com",
+      "avandN1277": {
+        "start_date": "2023-12-01",
+        "finish_date": "2023-12-01",
+        "avandi_gumar": "20000000",
+        "stacvox_gumar": 20122222.222222224
+      },
+      "havedepo": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+body {
+    /* Your existing styles for the body remain unchanged */
+    background-color: #f0f0f0;
+    background-image: url("https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148916638.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+footer {
+    padding: 35px 0;
+    width: 100%;
+    background: rgba(48, 2, 87, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.about_text,
+p {
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .about_text,
+    p {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

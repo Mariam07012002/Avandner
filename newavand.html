@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title here -->
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div id="includecontent"></div> 
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+             let includeContent = document.getElementById('includecontent');
+             let xhr = new XMLHttpRequest();
+             xhr.open('GET', 'menuforuserlist.html', true);
+             xhr.onreadystatechange = function () {
+                 if (xhr.readyState === 4 && xhr.status === 200) {
+                     includeContent.innerHTML = xhr.responseText;
+                 }
+             };
+             xhr.send();
+         });
+     </script>
+    <div class="under-head">
+        <div class="container-girl">
+            <div class="input-container">
+                <label for="avand" style="color:white">Ընտրեք ավանդի տեսակը:</label>
+                <select name="avand" id="avand-select-id">
+                  <option value="parz" id="parz">Պարզ տոկոս</option>
+                  <option value="bard" id="bard">Բարդ տոկոս</option>
+                  <option value="orerov" id="orerov">Ժամկետյաին(30-50 օր)</option>
+                  <option value="amisnerov" id="amisnerov">Ժամկետյաին(2-12 ամիս)</option>
+                  <option value="kutakayin" id="kutakayin">Կուտակային</option>
+                  <option value="tari_voroshaki_orer" id="tari_voroshaki_orer">Տարի + օրեր</option>
+                </select>
+             
+                <label for="numberInput" style="color: aliceblue;">m</label>
+                <input type="number" id="m-input" min="1" max="12" step="1" style="font-size: 12px;width: 28px;" disabled >
+                <label for="numberInput" style="color: aliceblue;">days</label>
+                <input type="number" id="days-input" min="1" max="366" step="1" style="font-size: 12px;width: 28px;" disabled >
+                <br><br>
+                <form action="">
+                    <form action="">
+                    <label for="gumar" style="color:white">Գումար</label>
+                    <input type="text" class="input" id="gumar">
+                </form>
+            
+            
+                <form action="">
+
+                    <label for="start date" style="color: white" >Սկիզբ</label>
+
+              <input type="date" id="start-date" name="trip-start" value="" max="2028-12-31" />
+                </form>
+                <form action="">
+                    <label for="finish date" style="color: white">Վերջ</label>
+               <input type="date" id="finish-date" name="trip-start" value="" max="2038-12-31" />
+                </form>
+                <form action="">
+                    <label for="result" style="color:white">Արդյունք</label>
+                    <input type="text" class="input" id="result-money"  disabled  >
+                </form>
+               <button id="calculate-avand-button" style="color:black"> Հաստատել</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="newavand.js"></script> 
+</body>
+</html>

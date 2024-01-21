@@ -1,0 +1,37 @@
+body{
+    background-image: url('./img/6706379_3418448.jpg');
+}
+.user-item {
+    background-color: rgb(68, 2, 99);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row; /* Display items side by side */
+    align-items: center; /* Align items vertically in the center */
+    /* Add any other styles as needed */
+}
+
+
+
+.one-avand {
+    margin: 1px;
+    padding: 3px;
+    border: 1px solid rgb(202, 200, 200); /* Specify the border style and color */
+    border-radius: 15px; /* Adjust the radius to your preference */
+}
+#add-avand {
+    background-color: #6034db; /* Set a background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for a comfortable clickable area */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#add-avand:hover {
+    background-color: #7829b9; /* Change background color on hover */
+}

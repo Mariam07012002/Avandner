@@ -1,0 +1,112 @@
+
+body {
+  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.dribbble.com/users/247458/screenshots/5083720/media/e7b6ce7799b5238611a087a10d0b9343.jpg?resize=400x0');
+  /* background-color: rgba(144, 56, 232, 0.571); */
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.initial-text {
+max-width: 710px;
+text-align: center;
+color: white;
+}
+.initial-text p {
+display: inline;
+font-size: 25PX;
+color: white;
+}
+/* .initial-text span {
+display: inline-block;
+padding: 13px 20px 13px 20px;
+background: #3D7C74;
+border-radius: 3px;
+color: white;
+cursor: pointer;
+font-size: 18px;
+justify-content: center;
+} */
+.initial-text span:hover {
+background: #3d7c74b6;
+transition: all ease 0.3s;
+}
+@media screen and (max-width: 600px) {
+.menu-list {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu-item {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+}
+
+
+.initial-text h1 {
+text-align: center;
+align-items: center;
+justify-content: center;
+padding: 5%;
+}
+
+.initial-text .varkanish_box .grid-container2 {
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
+}
+
+.initial-text .varkanish_box .grid-item2 h1 {
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+
+.initial-text .varkanish_box .grid-item2 p {
+padding: 20px;
+font-size: 30px;
+text-align: center;
+color: white;
+}
+
+.initial-text .varkanish_box .grid-item2 li {
+list-style: none;
+text-decoration: none;
+}
+
+.initial-text .varkanish_box .grid-item2 li a {
+list-style: none;
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+
+.initial-text .varkanish_box .grid-item2 p  {
+list-style: none;
+text-decoration: none; 
+padding: 8% ;
+margin: 5%;
+font-size: 18px;
+} 
+
+footer {
+padding: 35px 0;
+width: 100%;
+background: rgba(48, 2, 87, 0.8);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.initial-text .varkanish_box .grid-item2 li a:hover{
+color: brown;
+transition: all ease .5s;
+transform: scale(1.2);
+}
+.links {
+display: block;
+
+}
+

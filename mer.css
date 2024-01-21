@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusted to space-between */
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/960/946/original/fluid-gradient-background-abstract-blue-background-liquid-art-flowing-fluid-futuristic-gradient-graphic-purple-smooth-wallpaper-defocused-holographic-illustration-light-shape-banner-digital-free-video.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 35px 0;
+    width: 100%;
+    background: rgba(48, 2, 87, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.mer_masin_box h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    color: white;
+    
+}
+
+.mer_masin_box p ul .text {
+    text-decoration: none;
+}

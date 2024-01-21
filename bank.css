@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.pinimg.com/originals/86/b2/d6/86b2d6aa5f05e0c30d66674e9d4af18d.jpg');
+  /* background-color: rgba(6, 6, 249, 0.571); */
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.bank_box .bank_name h2 {
+text-align: center;
+align-items: center;
+justify-content: center;
+font-size: 27px;
+color: white;
+}
+.bank_box .banks_list .grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
+}
+.bank_box .banks_list .grid-container .grid-item {
+padding: 20px;
+font-size: 25px;
+text-align: center;
+}
+.bank_box .banks_list .grid-container .grid-item li {
+list-style: none;
+text-decoration: none;
+}
+.bank_box .banks_list .grid-container .grid-item li img {
+width: "42";
+height: "42";
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* .bank_box .banks_list .grid-container .grid-item li img:hover {
+transform: scale(1.5); 
+} */
+.bank_box .banks_list .grid-container .grid-item li a {
+list-style: none;
+text-decoration: none;
+color: #f6f4f6;
+font-size: 25px;
+}
+.bank_box .banks_list .grid-container .grid-item li a:hover{
+color: brown;
+transition: all ease .5s;
+transform: scale(1.2);
+
+}
+footer {
+padding: 35px 0;
+width: 100%;
+background: rgba(48, 2, 87, 0.8);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.links {
+display: block;
+
+}
+/* .links:hover{
+
+} */
+.da :hover{
+color: green;
+}
+a {
+color: blue;
+}

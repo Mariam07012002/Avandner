@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(48, 2, 87, 0.8);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+}
+
+#wallet {
+    position: relative;
+    width: 70%;
+    height: 70vh;
+}
+
+#wallet img {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    animation: slideIn 1.8s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 20%;
+    }
+}
+
+#barigalust {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    right: -100px;
+    top: 20%;
+    animation: slideIn2 1.9s ease-out forwards;
+}
+
+@keyframes slideIn2 {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+    to {
+        right: 100px;
+        opacity: 1;
+    }
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    padding: 35px 0;
+    width: 100%;
+    background: rgba(48, 2, 87, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="erashxiq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div id="includecontent"></div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+             let includeContent = document.getElementById('includecontent');
+             let xhr = new XMLHttpRequest();
+             xhr.open('GET', 'menu.html', true);
+             xhr.onreadystatechange = function () {
+                 if (xhr.readyState === 4 && xhr.status === 200) {
+                     includeContent.innerHTML = xhr.responseText;
+                 }
+             };
+             xhr.send();
+         });
+     </script>
+        <div class="content-wrapper">
+     <div class="erashxik_box">
+        <h2>Երաշխիք</h2>
+            <p>
+                 Ավանդների հատուցումը երաշխավորող հիմնադրամը  հիմնադրվել է`ՀՀ կենտրոնական բանկի նախաձեռնությամբ:
+                 <br>
+                Հիմնադրամի նպատակը ֆիզիկական անձանց ավանդների հատուցման երաշխավորումն է:Երաշխավորվում են 
+                <br>
+                Հայաստանում գործող բոլոր` 17 բանկերում եղած ավանդները:
+                Հատուցումն իրականացվում է`բանկի անվճարունակության դեպքում
+                <br>
+                1. Եթե ավանդատուն անվճարունակ բանկում ունի`միայն դրամային բանկային ավանդ,
+                ապա երաշխավորված ավանդի չափը 16 մմիլիոն դրամ է:
+                <br>
+                2. Եթե ավանդատուն անվճարունակ բանկում ունի`միայն արտարժութային բանկային 
+                ավանդ,ապա երաշխավորված ավանդի չափը 7 միլիոն դրամ է:
+                <br>
+                3. Եթե ավանդատուն անվճարունակ բանկում ունի`  դրամային և արտարժութային 
+                բանկային ավանդներև դրամային բանկային ավանդի գումարը`7 միլիոն դրամից
+                ավելի է,ապա երաշխավորվում է միայն դրամային ավանդը`մինչև 16 միլիոն դրամով:
+                <br>
+                4. Եթե ավանդատուն անվճարունակ բանկում`ունի դրամայինև արտարժութային
+                բանկային ավանդներև դրամային բանկային ավանդի գումարը պակաս է 7 միլիոն 
+                դրամից,ապա երաշխավորվում է դրամային բանկային ավանդն ամբողջությամբ 
+                և արտարժութային բանկային ավանդը` 7 միլիոն դրամի  և հատուցված  դրամային 
+                բանկային ավանդի տարբերության չափով:
+                <br>
+                Հիմնադրամը երաշխավորում է ավանդները իր միջոցների հաշվին,
+                որոնք գոյանում են` բոլոր բանկերի կողմից յուրաքանչյուր եռամսյակ կատարվող
+                պարբերական երաշխիքային վճարներից:
+            </p>
+    </div>
+ 
+</div>
+<br>
+<footer>
+    <ul class="menu-list">
+        <li class="menu-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="#">+374 87 78 88</a>
+        </li>
+       <li class="menu-item">
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <a href="kap.html">savesureteam@gmail.com</a>
+       </li>
+       <li class="menu-item">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+    </ul>  
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

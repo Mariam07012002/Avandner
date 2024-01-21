@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div id="includecontent"></div> 
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+             let includeContent = document.getElementById('includecontent');
+             let xhr = new XMLHttpRequest();
+             xhr.open('GET', 'menu.html', true);
+             xhr.onreadystatechange = function () {
+                 if (xhr.readyState === 4 && xhr.status === 200) {
+                     includeContent.innerHTML = xhr.responseText;
+                 }
+             };
+             xhr.send();
+         });
+     </script>
+   
+   <div class="mer_masin_box">
+        <h2>Մեր մասին</h2>
+        <p>
+            Հայտնի է, որ բանկերը ոչ միշտ են
+            կարողանում մատչելի ձևով ներկայացնել առաջարկվող ավանդների մասին,
+            ծանրաբեռնում են ավելորդ տեղեկատվությամբ, ինչը, հաճախ, վանում է հաճախորդներին:
+            Հաճախ, սովորական քաղաքացիները և հատկապես տարեցները,
+            ովքեր չեն կարողանում լիարժեքորեն օգտվել ինտերնետի ընձեռած
+            հնարավորություններից բանկից բանկ են շրջում`
+            համեմատելով բոլոր բանկերի տրամադրած պայմանները,տոկոսատրույքները:
+            Իրականում, ավանդ ներդնելու և եկամուտ ստանալու համար,
+            սովորական քաղաքացուն հետաքրքրում է միայն մի քանի հարց:
+            Եթե փորձենք մասնավորեցնել, ապա դրանք են`   
+                <br>
+                1. տոկոսադրույք,
+                    <br>
+                2. ժամկետներ,
+                    <br>
+                3. գումարի նվազագույն շեմ,
+                    <br>     
+                4. գումարի ավելացման/պակասեցման հնարավորություններ ու հետևանքներ,
+                    <br>   
+                5. համեմատություն այլ բանկերի առաջարկների հետ,
+                       <br>     
+                6. այլ տեղեկություններ` կախված անձնական հետաքրքրասիրությունից:
+                <br>
+            Ահա, վերոնշյալը հաշվի առնելով մենք ստեղծել ենք տիրույթ,
+            որտեղ մեկ էջում կարելի է տեսնել
+            բոլոր բանկերի կողմից առաջարկվող ավանդներն ու դրանց հիմնական պայմանները:
+            Մեր անձնակազմը անշահախնդիր օգնության ձեռք է մեկնում մեր բոլոր հաճախորդներին քանզի՝
+            մեզ համար առաջնային է մեր հաճախորդների սպասարկման որակի բարելավումը,
+            իրենց գնահատականը։
+            Մենք աշխատում ենք, որ դուք հանգիստ լինեք ձեր ավանդների համար և վստահեք մեզ ինչպես կվստահեք ձեզ։
+        </p>
+   </div>   
+
+<footer>
+    <ul class="menu-list">
+        <li class="menu-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="#">+374 87 78 88</a>
+        </li>
+       <li class="menu-item">
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <a href="kap.html">savesureteam@gmail.com</a>
+       </li>
+       <li class="menu-item">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="#">SaveSure bank</a>
+        </li>
+        <li class="menu-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="#">SaveSure bank</a>
+        </li>    
+    </ul>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

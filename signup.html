@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div id="includecontent"></div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+             let includeContent = document.getElementById('includecontent');
+             let xhr = new XMLHttpRequest();
+             xhr.open('GET', 'menu.html', true);
+             xhr.onreadystatechange = function () {
+                 if (xhr.readyState === 4 && xhr.status === 200) {
+                     includeContent.innerHTML = xhr.responseText;
+                 }
+             };
+             xhr.send();
+         });
+     </script>
+    <div class="signup-container">
+        <h2>Գրանցվել կայքում</h2>
+        <form>
+          <label for="firstName">Անուն:</label>
+          <input type="text" id="firstName" name="firstName" required>
+    
+          <br>
+    
+          <label for="lastName">Ազգանուն:</label>
+          <input type="text" id="lastName" name="lastName" required>
+    
+          <br>
+    
+          <label for="email">Էլ․ հասցե:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <br>
+    
+          <label for="password">Գաղտնաբառ:</label>
+          <input type="password" id="password" name="password" required>
+    
+          <br>
+    
+          <input type="submit" id = "signup-button-id" value="Գրանցվել">
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="signup.js" ></script>
+    <footer>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">+374 87 78 88</a>
+            </li>
+           <li class="menu-item">
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <a href="#">savesureteam@gmail.com</a>
+           </li>
+           <li class="menu-item">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#">SaveSure bank</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="#">SaveSure bank</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="#">SaveSure bank</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="#">SaveSure bank</a>
+            </li>
+        </ul>  
+    </footer>
+  
+</body>
+</html>

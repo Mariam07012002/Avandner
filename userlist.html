@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title here -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="userlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <div id="includecontent"></div> 
+    </header>
+  
+  <div id="userlist-div">
+       
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+         let includeContent = document.getElementById('includecontent');
+         let xhr = new XMLHttpRequest();
+         xhr.open('GET', 'menuforuserlist.html', true);
+         xhr.onreadystatechange = function () {
+             if (xhr.readyState === 4 && xhr.status === 200) {
+                 includeContent.innerHTML = xhr.responseText;
+             }
+         };
+         xhr.send();
+     });
+ </script>
+ <button id = "add-avand"> Ներդնել Ավանդ </button>
+  <script type= "module" src="userlist.js"></script>
+  <script  src="menuforuserlist.js"></script>
+  <!-- <script type= "module" src="userlist.js"></script> -->
+  <script src="script.js"></script>
+</body>
+</html>
